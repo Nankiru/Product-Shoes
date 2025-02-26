@@ -24,10 +24,20 @@
           <!-- Logo/Brand Section -->
           <div class="text-center mb-8">
             <div
-              class=" w-20 h-20 flex items-center justify-center mx-auto mb-4 "
+              class="w-20 h-20 flex items-center justify-center mx-auto mb-4"
             >
-            <svg class="w-full h-full text-blue-500" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" viewBox="0 0 24 24">
-                <path d="M11.782 5.72a4.773 4.773 0 0 0-4.8 4.173 3.43 3.43 0 0 1 2.741-1.687c1.689 0 2.974 1.972 3.758 2.587a5.733 5.733 0 0 0 5.382.935c2-.638 2.934-2.865 3.137-3.921-.969 1.379-2.44 2.207-4.259 1.231-1.253-.673-2.19-3.438-5.959-3.318ZM6.8 11.979A4.772 4.772 0 0 0 2 16.151a3.431 3.431 0 0 1 2.745-1.687c1.689 0 2.974 1.972 3.758 2.587a5.733 5.733 0 0 0 5.382.935c2-.638 2.933-2.865 3.137-3.921-.97 1.379-2.44 2.208-4.259 1.231-1.253-.673-2.19-3.443-5.963-3.317Z"/>
+              <svg
+                class="w-full h-full text-blue-500"
+                aria-hidden="true"
+                xmlns="http://www.w3.org/2000/svg"
+                width="24"
+                height="24"
+                fill="currentColor"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  d="M11.782 5.72a4.773 4.773 0 0 0-4.8 4.173 3.43 3.43 0 0 1 2.741-1.687c1.689 0 2.974 1.972 3.758 2.587a5.733 5.733 0 0 0 5.382.935c2-.638 2.934-2.865 3.137-3.921-.969 1.379-2.44 2.207-4.259 1.231-1.253-.673-2.19-3.438-5.959-3.318ZM6.8 11.979A4.772 4.772 0 0 0 2 16.151a3.431 3.431 0 0 1 2.745-1.687c1.689 0 2.974 1.972 3.758 2.587a5.733 5.733 0 0 0 5.382.935c2-.638 2.933-2.865 3.137-3.921-.97 1.379-2.44 2.208-4.259 1.231-1.253-.673-2.19-3.443-5.963-3.317Z"
+                />
               </svg>
             </div>
           </div>
@@ -42,11 +52,34 @@
               >
                 Welcome Back
               </h2>
-              <p class="text-gray-500 mt-2">Please sign in to continue</p>
+              <p class="text-gray-500 mt-2">
+                Please sign up to create new account
+              </p>
             </div>
 
             <form class="space-y-6">
-              <!-- Email Input -->
+              <!-- Username Input -->
+              <div class="relative">
+                <label
+                  class="block text-gray-700 text-sm font-medium mb-2"
+                  for="email"
+                >
+                  Email Address
+                </label>
+                <div class="relative">
+                  <i
+                    data-lucide="mail"
+                    class="absolute left-3 top-1/2 transform -translate-y-1/2 text-gray-400 w-5 h-5"
+                  ></i>
+                  <input
+                    class="w-full pl-10 pr-4 py-3 rounded-xl border border-gray-200 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-all duration-200 bg-white/50"
+                    type="text"
+                    id="username"
+                    placeholder="Enter your Username"
+                    required
+                  />
+                </div>
+              </div>
               <div class="relative">
                 <label
                   class="block text-gray-700 text-sm font-medium mb-2"
@@ -116,56 +149,17 @@
                 type="submit"
                 class="w-full bg-gradient-to-r from-blue-600 to-purple-600 text-white py-3 rounded-xl hover:opacity-90 transition duration-200 transform hover:-translate-y-0.5 shadow-lg hover:shadow-xl"
               >
-                Sign In
-              </button>
-
-              <!-- Divider -->
-              <div class="relative">
-                <div class="absolute inset-0 flex items-center">
-                  <div class="w-full border-t border-gray-200"></div>
-                </div>
-                <div class="relative flex justify-center text-sm">
-                  <span class="px-4 bg-white/80 text-gray-500"
-                    >Or continue with</span
-                  >
-                </div>
-              </div>
-
-              <!-- Fingerprint Button -->
-              <button
-                type="button"
-                class="w-full flex items-center justify-center gap-3 py-3 bg-white border border-gray-200 rounded-xl hover:bg-gray-50 transition duration-200 transform hover:-translate-y-0.5 shadow-md hover:shadow-lg group"
-              >
-                <svg
-                  class="w-6 h-6 text-blue-500"
-                  aria-hidden="true"
-                  xmlns="http://www.w3.org/2000/svg"
-                  width="24"
-                  height="24"
-                  fill="currentColor"
-                  viewBox="0 0 24 24"
-                >
-                  <path
-                    fill-rule="evenodd"
-                    d="M12.037 21.998a10.313 10.313 0 0 1-7.168-3.049 9.888 9.888 0 0 1-2.868-7.118 9.947 9.947 0 0 1 3.064-6.949A10.37 10.37 0 0 1 12.212 2h.176a9.935 9.935 0 0 1 6.614 2.564L16.457 6.88a6.187 6.187 0 0 0-4.131-1.566 6.9 6.9 0 0 0-4.794 1.913 6.618 6.618 0 0 0-2.045 4.657 6.608 6.608 0 0 0 1.882 4.723 6.891 6.891 0 0 0 4.725 2.07h.143c1.41.072 2.8-.354 3.917-1.2a5.77 5.77 0 0 0 2.172-3.41l.043-.117H12.22v-3.41h9.678c.075.617.109 1.238.1 1.859-.099 5.741-4.017 9.6-9.746 9.6l-.215-.002Z"
-                    clip-rule="evenodd"
-                  />
-                </svg>
-
-                <span
-                  class="text-gray-600 group-hover:text-gray-900 transition-colors duration-200"
-                  >Login with Fingerprint</span
-                >
+                Sign Up
               </button>
             </form>
 
             <!-- Sign Up Link -->
             <p class="text-center text-sm text-gray-600">
-              Don't have an account?
+              Already have an account?
               <a
-                href="./singup.html"
+                href="./login.html"
                 class="text-blue-600 hover:text-blue-800 font-semibold transition-colors duration-200"
-                >Sign Up</a
+                >Sign in</a
               >
             </p>
           </div>
