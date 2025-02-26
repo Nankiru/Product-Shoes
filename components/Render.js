@@ -12,7 +12,7 @@ export const Render = (hero) => {
             </p>
             <div class="flex justify-between items-center">
                 <div class="flex items-center">
-                    <span class="text-gray-800 font-semibold">Position ${hero.position}</span>
+                    <small class="text-gray-500 font-semibold">Position <span class="text-orange-500">${hero.position}</span></small>
                 </div>
             </div>
         </div>

@@ -37,7 +37,7 @@ export const heroes = [
       position: "Assassin",
       description: "A swift assassin who can dash multiple times and deal burst damage.",
       rating: 4.7,
-      image: "lancelot_image_url"
+      image: "https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/87f1d34d-2002-4608-b166-a5c6fac0f344/dgkghkb-c25ec259-5430-4c63-b605-268d92633be1.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7InBhdGgiOiJcL2ZcLzg3ZjFkMzRkLTIwMDItNDYwOC1iMTY2LWE1YzZmYWMwZjM0NFwvZGdrZ2hrYi1jMjVlYzI1OS01NDMwLTRjNjMtYjYwNS0yNjhkOTI2MzNiZTEuanBnIn1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmZpbGUuZG93bmxvYWQiXX0.tD1QXiipbseu8cyDehbyf1efIO2SDotQyRMzcryrm1Q"
     },
     {
       id: 6,
@@ -45,7 +45,7 @@ export const heroes = [
       position: "Fighter/Mage",
       description: "A magic-based fighter with strong crowd control.",
       rating: 4.6,
-      image: "guinevere_image_url"
+      image: "https://i.redd.it/f7uufkb7e9r61.jpg"
     },
     {
       id: 7,
@@ -53,7 +53,7 @@ export const heroes = [
       position: "Mage",
       description: "A mage with complex mechanics and strong mobility.",
       rating: 4.7,
-      image: "kagura_image_url"
+      image: "https://i.redd.it/bthbpqx0ismd1.jpeg"
     },
     {
       id: 8,
@@ -61,7 +61,7 @@ export const heroes = [
       position: "Fighter",
       description: "A fighter who gets stronger as the game progresses.",
       rating: 4.5,
-      image: "aldous_image_url"
+      image: "https://i.pinimg.com/736x/20/94/ab/2094ab8e5efe8c90dbd0dc6a1c042b76.jpg"
     },
     {
       id: 9,
@@ -69,7 +69,7 @@ export const heroes = [
       position: "Marksman/Assassin",
       description: "A sniper with high critical damage and stealth abilities.",
       rating: 4.7,
-      image: "lesley_image_url"
+      image: "https://cdn.oneesports.gg/cdn-data/2022/11/MLBB_HawkeyedSniper_Lesley.webp"
     },
     {
       id: 10,
@@ -77,7 +77,7 @@ export const heroes = [
       position: "Tank",
       description: "A tank with a powerful hook ability to control enemies.",
       rating: 4.6,
-      image: "franco_image_url"
+      image: "https://i.ytimg.com/vi/_PdS-VPD46U/hq720.jpg?sqp=-oaymwEhCK4FEIIDSFryq4qpAxMIARUAAAAAGAElAADIQj0AgKJD&rs=AOn4CLCzYW0_zuhg4Qw_IBfowkG62K7hXA"
     },
     {
       id: 11,
@@ -85,7 +85,7 @@ export const heroes = [
       position: "Assassin",
       description: "A stealth assassin who excels in ambushing enemies.",
       rating: 4.7,
-      image: "natalia_image_url"
+      image: "https://i.ytimg.com/vi/RIFfxOtv1c0/maxresdefault.jpg"
     },
     {
       id: 12,
@@ -93,7 +93,7 @@ export const heroes = [
       position: "Tank/Mage",
       description: "A mage-tank hybrid that absorbs enemy shields.",
       rating: 4.8,
-      image: "esmeralda_image_url"
+      image: "https://media.assettype.com/afkgaming%2F2024-03%2F70e0e555-209b-48b6-a2ec-b6388b83dbf7%2FMLBB_Esmeralda_Build_Guide.jpg?auto=format%2Ccompress&dpr=1.0&w=1200"
     },
     {
       id: 13,
@@ -101,7 +101,7 @@ export const heroes = [
       position: "Fighter/Tank",
       description: "A durable fighter with strong area damage.",
       rating: 4.5,
-      image: "balmond_image_url"
+      image: "https://cdn.oneesports.gg/cdn-data/2023/07/MLBB_InfernalWarlordBalmond.jpg"
     },
     {
       id: 14,
@@ -109,7 +109,7 @@ export const heroes = [
       position: "Mage",
       description: "A highly mobile mage with strong burst damage.",
       rating: 4.7,
-      image: "harith_image_url"
+      image: "https://api.duniagames.co.id/api/content/upload/file/16607617221587032454.jfif"
     },
     {
       id: 15,
@@ -117,7 +117,7 @@ export const heroes = [
       position: "Marksman",
       description: "A marksman with high attack speed and mobility.",
       rating: 4.6,
-      image: "claude_image_url"
+      image: "https://cdn.oneesports.gg/cdn-data/2024/11/MLBB_M6WorldChampionship_CosmicBlazeClaude_splashart.jpg"
     },
     {
       id: 16,
@@ -125,7 +125,7 @@ export const heroes = [
       position: "Fighter",
       description: "A strong initiator with the ability to throw enemies or allies.",
       rating: 4.6,
-      image: "jawhead_image_url"
+      image: "https://cdn.oneesports.gg/cdn-data/2022/08/MLBB_CyberRanger_Jawhead.webp"
     },
     {
       id: 17,
@@ -133,15 +133,7 @@ export const heroes = [
       position: "Fighter",
       description: "A martial artist with excellent mobility and crowd control.",
       rating: 4.9,
-      image: "chou_image_url"
-    },
-    {
-      id: 18,
-      name: "Helcurt",
-      position: "Assassin",
-      description: "A silent killer who can disable enemies' vision.",
-      rating: 4.7,
-      image: "helcurt_image_url"
+      image: "https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/875f2d74-8587-4c51-ab41-6e5e48de00ae/dgcyiy8-df915223-6691-4f15-aebf-2f8b2310c180.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7InBhdGgiOiJcL2ZcLzg3NWYyZDc0LTg1ODctNGM1MS1hYjQxLTZlNWU0OGRlMDBhZVwvZGdjeWl5OC1kZjkxNTIyMy02NjkxLTRmMTUtYWViZi0yZjhiMjMxMGMxODAuanBnIn1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmZpbGUuZG93bmxvYWQiXX0.-gk4ElpWf_DtX3QBHeyESnxjN_ino_TIVCB3-7bBD-8"
     },
     {
       id: 19,
@@ -149,7 +141,7 @@ export const heroes = [
       position: "Mage",
       description: "A small mage with high cooldown reduction and single-target damage.",
       rating: 4.5,
-      image: "cyclops_image_url"
+      image: "https://news.codashop.com/ph/wp-content/uploads/sites/5/2021/07/MLBB-Cyclops-%E2%80%98Master-Yoda-limited-skin-1024x1024.png"
     },
     {
       id: 20,
@@ -157,6 +149,14 @@ export const heroes = [
       position: "Fighter",
       description: "A fighter who can become temporarily immortal with his ultimate skill.",
       rating: 4.6,
-      image: "argus_image_url"
+      image: "https://news.codashop.com/ph/wp-content/uploads/sites/5/2021/07/MLBB-Argus-%E2%80%98Darth-Vader-limited-skin.png"
+    },
+    {
+      id: 21,
+      name: "Kimmy",
+      position: "Marksman/Mage",
+      description: "A hybrid marksman-mage with a unique shooting mechanic.",
+      rating: 4.7,
+      image: "https://cdn.oneesports.gg/cdn-data/wp-content/uploads/2020/07/MLBB_DragonTamer_FrostWing_Kimmy.jpg"
     }
   ];
