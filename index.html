@@ -4,7 +4,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Modern shoes</title>
+  <title>Modern Shoe's</title>
   <script src="https://cdn.tailwindcss.com"></script>
   <script src="products.js"></script>
   <link rel="shortcut icon"
@@ -190,8 +190,14 @@
     <a href="#">
       <h5 class="text-xl font-semibold tracking-tight text-slate-900">${product.name}</h5>
     </a>
-    <div class="mt-2.5 flex items-center">
-      <h2 class="text-blue-500">Made: ${product.made_in}</h2>
+    <div class="mt-2.5 flex flex-row items-center">
+<svg class="w-6 h-6 text-green-600 animate-bounce " aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24">
+  <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 13a3 3 0 1 0 0-6 3 3 0 0 0 0 6Z"/>
+  <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.8 13.938h-.011a7 7 0 1 0-11.464.144h-.016l.14.171c.1.127.2.251.3.371L12 21l5.13-6.248c.194-.209.374-.429.54-.659l.13-.155Z"/>
+</svg>
+
+
+       <h2 class="text-blue-500">${product.made_in}</h2>
     </div>
     <div class="flex items-center justify-between">
       <p>
@@ -201,10 +207,8 @@
       <button type="button" 
         onclick="location.href='${product.in_stock=='In Stock' ? 'details.html?id=' + product.id : 'outofstock.html'}'" 
         class="${product.in_stock ? '' : 'cursor-not-allowed'} relative inline-flex items-center bg-indigo-50 justify-start px-5 py-3 overflow-hidden font-bold rounded-lg group rounded-tl-[50px] rounded-br-[50px]">
-        <span class="rounded-tl-[50px] rounded-br-[50px] w-32 h-32 rotate-45 translate-x-12 -translate-y-2 absolute left-0 top-0 bg-indigo-600 opacity-[3%]"></span>
         <span class="rounded-tl-[50px] rounded-br-[50px] absolute top-0 left-0 w-48 h-48 -mt-1 transition-all duration-500 ease-in-out rotate-45 -translate-x-56 -translate-y-24 bg-indigo-600 opacity-100 group-hover:-translate-x-8"></span>
         <span class="rounded-tl-[50px] rounded-br-[50px] relative w-full text-base font-semibold text-left text-gray-900 transition-colors duration-200 ease-in-out group-hover:text-white">Show Detail</span>
-        <span class="rounded-tl-[50px] rounded-br-[50px] absolute inset-0 border-2 border-white rounded-md"></span>
       </button>
     </div>
   </div>
