@@ -1,0 +1,122 @@
+const products = [
+  {
+    id: 1,
+    name: "Nike Air Max 90",
+    price: 120.99,
+    in_stock: "In Stock",
+    made_in: "Vietnam",
+    image: "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/wzitsrb4oucx9jukxsmc/AIR+MAX+90.png",
+    description: "A classic running shoe with superior cushioning and timeless design.",
+    discount: 10,
+    total: 110.99,
+    limited: 20
+  },
+  {
+    id: 2,
+    name: "Adidas Ultraboost 22",
+    price: 180.50,
+    in_stock: "Out of Stock",
+    made_in: "China",
+    image: "https://assets.adidas.com/images/w_600,f_auto,q_auto/f8f63591f4c3438384b3adf900a1daa0_9366/Ultraboost_22_Shoes_Black_GX5464_01_standard.jpg",
+    description: "Premium comfort and energy return with responsive Boost midsole technology.",
+    discount: 15,
+    total: 165.50,
+    limited: 20
+  },
+  {
+    id: 3,
+    name: "Puma RS-X",
+    price: 110.00,
+    in_stock: "In Stock",
+    made_in: "Indonesia",
+    image: "https://images.puma.com/image/upload/f_auto,q_auto,w_2000,b_rgb:FAFAFA/global/images/391174/15/sv01/fnd/ZAF/fmt/png",
+    description: "Futuristic design with bold color accents and durable construction.",
+    discount: 5,
+    total: 105.00,
+    limited: 20
+  },
+  {
+    id: 4,
+    name: "New Balance 574",
+    price: 89.99,
+    in_stock: "In Stock",
+    made_in: "USA",
+    image: "https://selektivbkk.com/wp-content/uploads/2023/06/Screen-Shot-2566-06-12-at-22.24.04.png",
+    description: "A versatile sneaker that blends casual style with excellent comfort.",
+    discount: 8,
+    total: 81.99,
+    limited: 20
+  },
+  {
+    id: 5,
+    name: "Reebok Club C 85",
+    price: 75.00,
+    in_stock: "Out of Stock",
+    made_in: "Bangladesh",
+    image: "https://www.reebok.com/cdn/shop/files/100000154_SLC_eCom-tif.png?v=1734089199&width=2000",
+    description: "Classic court-style sneaker with soft leather upper for all-day comfort.",
+    discount: 12,
+    total: 63.00,
+    limited: 20
+  },
+  {
+    id: 6,
+    name: "Vans Old Skool",
+    price: 65.00,
+    in_stock: "In Stock",
+    made_in: "Vietnam",
+    image: "https://www.side-step.co.za/media/catalog/product/cache/60023b40f56fdff39b9c495b8e044aef/v/a/van9mp-vans-old-skool-navy-vn0a5krsjdu1-v1_jpg_3.jpg",
+    description: "A timeless skate shoe with durable suede and canvas upper.",
+    discount: 5,
+    total: 60.00,
+    limited: 20
+  },
+  {
+    id: 7,
+    name: "Asics Gel-Kayano 28",
+    price: 150.00,
+    in_stock: "In Stock",
+    made_in: "China",
+    image: "https://images.asics.com/is/image/asics/1011B188_003_SR_RT_GLB?$sfcc-product$",
+    description: "High-performance running shoes with superior stability and cushioning.",
+    discount: 20,
+    total: 130.00,
+    limited: 20
+  },
+  {
+    id: 8,
+    name: "Converse Chuck Taylor",
+    price: 55.00,
+    in_stock: "In Stock",
+    made_in: "USA",
+    image: "https://i.ebayimg.com/images/g/bOoAAOSwdpZjrcv1/s-l1200.png",
+    description: "Iconic canvas sneakers with a classic rubber sole.",
+    discount: 5,
+    total: 50.00,
+    limited: 20
+  },
+  {
+    id: 9,
+    name: "Under Armour HOVR ",
+    price: 140.00,
+    in_stock: "Out of Stock",
+    made_in: "China",
+    image: "https://www.legendfootwear.co.uk/cdn/shop/products/7026-137-1_ad1032bf-6039-45aa-a9fd-ebea11f36e9f.jpg?v=1658494255",
+    description: "Advanced running shoes with HOVR technology for zero gravity feel.",
+    discount: 15,
+    total: 125.00,
+    limited: 20
+  },
+  {
+    id: 10,
+    name: "Salomon Speedcross 5",
+    price: 130.00,
+    in_stock: "In Stock",
+    made_in: "Indonesia",
+    image: "https://phl.salomon.com/cdn/shop/files/L47302300_0_GHO_SPEEDCROSS6GTXWFlintStone_Black_Heather.png.high-res.jpg?v=1717163869&width=370%20370w",
+    description: "Trail running shoes with aggressive grip and precise foothold.",
+    discount: 10,
+    total: 120.00,
+    limited: 20
+  }
+];
