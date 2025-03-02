@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="h-screen flex items-center justify-center p-6">
+    <div class="absolute top-0 z-[-2] h-screen w-screen bg-neutral-950 bg-[radial-gradient(ellipse_80%_80%_at_50%_-20%,rgba(120,119,198,0.3),rgba(255,255,255,0))]"></div>
+    <!-- Cooler Card Component -->
+    <div class="relative group">
+        <a href="../index.html" class="absolute z-20 bg-white px-[10px] py-[5px] rounded-tl-[25px] rounded-br-[25px] top-[10px] left-[5px] bg-gradient-to-r from-blue-500 to-green-500 font-serif text-transparent bg-clip-text">back</a>
+        <a href="../index.html" class="absolute z-10 bg-white px-[10px] py-[5px] rounded-tl-[25px] rounded-br-[25px] top-[10px] left-[5px] bg-white text-white">Hello</a>
+        <!-- Animated Background Blur -->
+        <div class="absolute -inset-1 bg-gradient-to-r from-pink-600 to-purple-600 rounded-2xl blur opacity-75 group-hover:opacity-100 transition duration-1000 group-hover:duration-200 animate-tilt"></div>
+        
+        <!-- Main Card -->
+        <div class="relative px-7 py-6 bg-black/80 backdrop-blur-xl rounded-xl leading-none flex flex-col items-center max-w-sm">
+            <!-- Status Indicator -->
+            <div class="absolute top-4 right-4 flex items-center">
+                <div class="h-3 w-3 bg-green-400 rounded-full animate-pulse"></div>
+                <span class="text-green-400 text-xs ml-1.5 font-serif">ONLINE</span>
+            </div>
+
+            <!-- Profile Image with Ring Animation -->
+            <div class="relative group">
+                <div class="absolute -inset-0.5 bg-gradient-to-r from-pink-600 to-purple-600 rounded-full blur opacity-75 group-hover:opacity-100 transition duration-1000 group-hover:duration-200 animate-tilt"></div>
+                <div class="relative">
+                    <img src="../images/fullStack.png"
+                         class="w-32 h-32 rounded-full object-cover transform transition-all duration-500"
+                         alt="Profile">
+                </div>
+            </div>
+
+            <!-- Profile Info -->
+            <div class="mt-6 text-center">
+                <h2 class="text-2xl font-bold bg-gradient-to-r from-pink-500 to-violet-500 text-transparent bg-clip-text">Khem <span class="bg-gradient-to-r from-blue-500 to-green-500 text-transparent bg-clip-text">Sopheanan</span></h2>
+                <p id="typewriter" class="text-purple-400 font-medium my-2 overflow-hidden"></p>
+                <p class="text-gray-300 mt-2 text-sm ">Creating the visual components of a website using languages like React, Tailwind, Bootstrap, Laravel, MySQL.</p>
+            </div>
+
+            <!-- Animated Stats -->
+            <div class="flex justify-between w-full mt-6 px-4">
+                <div class="text-center transform transition-all duration-300 hover:scale-110">
+                    <p class="text-2xl font-bold bg-gradient-to-r from-pink-500 to-violet-500 text-transparent bg-clip-text">2M</p>
+                    <p class="text-gray-400 text-xs">FOLLOWERS</p>
+                </div>
+                <div class="text-center transform transition-all duration-300 hover:scale-110">
+                    <p class="text-2xl font-bold bg-gradient-to-r from-pink-500 to-violet-500 text-transparent bg-clip-text">20</p>
+                    <p class="text-gray-400 text-xs">PROJECTS</p>
+                </div>
+                <div class="text-center transform transition-all duration-300 hover:scale-110">
+                    <p class="text-2xl font-bold bg-gradient-to-r from-pink-500 to-violet-500 text-transparent bg-clip-text">5/10</p>
+                    <p class="text-gray-400 text-xs">RATING</p>
+                </div>
+            </div>
+
+            <!-- Connect Button -->
+            <a href="https://t.me/Hoyyy_Mix_ban_Mention_Ke_jg" class="relative mt-8 w-full group/btn">
+                <div class="absolute -inset-0.5 bg-gradient-to-r from-pink-600 to-purple-600 rounded-lg blur opacity-75 group-hover/btn:opacity-100 transition duration-1000 group-hover:duration-200"></div>
+                <div class="relative px-6 py-3 bg-black rounded-lg leading-none flex items-center justify-center">
+                    <span class="text-gray-200 group-hover/btn:text-white transition duration-200">Contact Me</span>
+                </div>
+            </a>
+
+            <!-- Tech Stack Pills -->
+            <div class="flex flex-wrap gap-2 mt-6 justify-center">
+                <span class="px-3 py-1 text-xs bg-purple-900/50 text-purple-300 rounded-full">React</span>
+                <span class="px-3 py-1 text-xs bg-blue-600/50 text-blue-300 rounded-full">Tailwind</span>
+                <span class="px-3 py-1 text-xs bg-teal-900/50 text-teal-300 rounded-full">Laravel</span>
+                <span class="px-3 py-1 text-xs bg-yellow-900/50 text-yellow-300 rounded-full">MySQL</span>
+            </div>
+        </div>
+    </div>
+
+    <!-- Typing -->
+
+  <script>
+    const words = ["Full stack", "UX/UI Design", "Web Developer" , "Laravel Developer" , "Tailwind Developer"];
+    let i = 0;
+    let j = 0;
+    let currentWord = "";
+    let isDeleting = false;
+    
+    function type() {
+      currentWord = words[i];
+      if (isDeleting) {
+        document.getElementById("typewriter").textContent = currentWord.substring(0, j-1);
+        j--;
+        if (j == 0) {
+          isDeleting = false;
+          i++;
+          if (i == words.length) {
+            i = 0;
+          }
+        }
+      } else {
+        document.getElementById("typewriter").textContent = currentWord.substring(0, j+1);
+        j++;
+        if (j == currentWord.length) {
+          isDeleting = true;
+        }
+      }
+      setTimeout(type, 130);
+    }
+    
+    type();
+    </script>
+</body>
+</html>
+</html>
