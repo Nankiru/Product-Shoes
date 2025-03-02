@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Details</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="./heroes.js"></script>
+</head>
+<body class="bg-gray-100 flex items-center justify-center min-h-screen p-[20px]">
+
+    <div id="product" class="bg-white p-6 rounded-xl shadow-lg max-w-md w-full text-center"></div>
+
+    <script>
+        const id = new URLSearchParams(location.search).get('id');
+        const product = heroes.find(p => p.id == id);
+
+        document.getElementById('product').innerHTML = product ? `
+            <img src="${product.image}" class="w-full h-46 bg-contain bg-no-repeat rounded-lg shadow-md">
+            <h1 class="text-3xl font-bold mt-4">${product.name}</h1>
+            <p class="text-gray-500 mt-2 px-4">${product.description}</p>
+            
+            <div class="mt-6 flex gap-4 justify-center">
+                <a href="index.html" class="px-6 py-3 text-white font-semibold rounded-lg 
+                   bg-gradient-to-r from-blue-500 to-purple-500 transition-all 
+                   duration-300 ease-in-out transform hover:scale-105 hover:shadow-lg
+                   hover:from-purple-500 hover:to-blue-500">
+                    Back to Products
+                </a>
+            </div>
+        ` : '<p class="text-red-500">Product not found</p>';
+    </script>
+
+</body>
+</html>

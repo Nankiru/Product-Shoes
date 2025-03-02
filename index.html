@@ -5,21 +5,26 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Mobile Legend bang bang</title>
     <script src="https://cdn.tailwindcss.com"></script>
-    <link rel="shortcut icon" href="https://play-lh.googleusercontent.com/eOSTyn3tnJrezNp0pBV-grARGI8xWM0ylM0fZYoV-ZFaY52wCjyRwn0uIsWrAhQjzg=w240-h480-rw" type="image/x-icon" />
+    <script src="heroes.js"></script>
+    <link
+      rel="shortcut icon"
+      href="https://play-lh.googleusercontent.com/eOSTyn3tnJrezNp0pBV-grARGI8xWM0ylM0fZYoV-ZFaY52wCjyRwn0uIsWrAhQjzg=w240-h480-rw"
+      type="image/x-icon"
+    />
   </head>
   <body class="p-[20px] bg-gray-300">
     <!-- Navbar -->
 
-    <nav class="bg-white/30 backdrop-blur-sm bg-blur-sm border-gray-200 py-2.5 rounded-[20px] sticky top-[20px] z-20">
+    <nav
+      class="bg-white/30 backdrop-blur-sm bg-blur-sm border-gray-200 py-2.5 rounded-[20px] sticky top-[20px] z-20"
+    >
       <div
         class="flex flex-wrap items-center justify-between max-w-screen-xl px-4 mx-auto"
       >
         <a href="#" class="flex items-center">
           <img
-            src="https://play-lh.googleusercontent.com/eOSTyn3tnJrezNp0pBV-grARGI8xWM0ylM0fZYoV-ZFaY52wCjyRwn0uIsWrAhQjzg=w240-h480-rw"
-            class="h-10 mr-3 sm:h-10 rounded-[20px]
-            alt="Landwind Logo"
-          />
+          src="https://play-lh.googleusercontent.com/eOSTyn3tnJrezNp0pBV-grARGI8xWM0ylM0fZYoV-ZFaY52wCjyRwn0uIsWrAhQjzg=w240-h480-rw"
+          class="h-10 mr-3 sm:h-10 rounded-[20px] alt="Landwind Logo" />
           <span class="self-center text-xl font-semibold whitespace-nowrap"
             >ML bang bang</span
           >
@@ -31,7 +36,7 @@
 
           <a
             href="./pages/login.html"
-            class="hidde md:block  text-white bg-purple-700 hover:bg-purple-800 font-medium rounded-lg text-sm px-4 lg:px-5 py-2 lg:py-2.5 sm:mr-2 lg:mr-0"
+            class="hidde md:block text-white bg-purple-700 hover:bg-purple-800 font-medium rounded-lg text-sm px-4 lg:px-5 py-2 lg:py-2.5 sm:mr-2 lg:mr-0"
             >Login</a
           >
           <button
@@ -108,11 +113,41 @@
     </nav>
 
     <main class="mt-[20px]">
-        <section id="render" class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-[10px] ">
-            
-        </section>
-    </main>
+      <section
+      id="render"
+      class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-[10px]"
+    ></section>
     
+    <script>
+    
+    const container = document.getElementById("render");
+  container.innerHTML = heroes.map((hero) => `
+    <div class="flex flex-col justify-center items-center rounded-[10px]">
+      <div class="bg-white rounded-lg shadow-lg overflow-hidden max-w-lg w-full">
+        <img src="${hero.image}" alt="${hero.name}" class="w-full h-64 object-cover hover:scale-105 transition duration-500 cursor-pointer">
+        <div class="p-6">
+          <h2 class="text-2xl font-bold text-gray-800 mb-2">${hero.name}</h2>
+          <div class="flex justify-between items-center">
+            <div class="flex items-center">
+              <small class="text-gray-500 font-semibold">Position <span class="text-orange-500">${hero.position}</span></small>
+            </div>
+          </div>
+          <div class="mt-4">
+            <a href="details.html?id=${hero.id}" class="px-6 py-[5px] rounded-tl-[50px] rounded-br-[50px] text-white font-semibold rounded-lg 
+                   bg-gradient-to-r from-blue-500 to-purple-500 transition-all 
+                   duration-300 ease-in-out transform hover:scale-105 hover:shadow-lg
+                   hover:from-purple-500 hover:to-blue-500">
+                    Hero Detail
+                </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  `).join("");
+    </script>
+    
+    </main>
+
     <!-- Card Section -->
 
     <!-- Footer  -->
@@ -247,8 +282,8 @@
           class="pt-7 flex flex-col min-[520px]:flex-row items-center justify-between gap-6"
         >
           <span class="text-sm font-normal text-gray-500"
-            >&copy;<a href="https://www.nanshop.online/">Nanshop.online</a> 2k25, All rights
-            reserved.</span
+            >&copy;<a href="https://www.nanshop.online/">Nanshop.online</a>
+            2k25, All rights reserved.</span
           >
           <div class="flex items-center gap-4">
             <a
@@ -320,6 +355,14 @@
                   fill="currentColor"
                 />
               </svg>
+            </a>
+            <a
+              href="#"
+              class="border border-black p-2 rounded-full aspect-square text-gray-700 transition-all duration-500 hover:text-indigo-600 hover:border-indigo-600 focus-within:outline-0 focus-within:text-indigo-600 focus-within:border-indigo-600"
+            >
+            <svg class="w-8 h-8 text-blue-600" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24">
+              <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6v13m0-13 4 4m-4-4-4 4"/>
+            </svg>            
             </a>
           </div>
         </div>

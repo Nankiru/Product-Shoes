@@ -1,4 +1,4 @@
-export const heroes = [
+ const heroes = [
     {
       id: 1,
       name: "Alucard",
