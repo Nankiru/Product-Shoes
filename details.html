@@ -7,9 +7,14 @@
     <script src="https://cdn.tailwindcss.com"></script>
     <script src="./heroes.js"></script>
 </head>
-<body class="bg-gray-100 flex items-center justify-center min-h-screen p-[20px]">
+<body class="bg-gray-400 flex items-center justify-center h-screen p-[20px]">
+    
+<main>
+<section class=" w-full h-screen mt-[20px]">
 
-    <div id="product" class="bg-white p-6 rounded-xl shadow-lg max-w-md w-full text-center"></div>
+    <div id="product" class="bg-white  p-6 rounded-xl shadow-lg max-w-md w-full text-center"></div>
+</section>
+</main>
 
     <script>
         const id = new URLSearchParams(location.search).get('id');
@@ -30,6 +35,10 @@
             </div>
         ` : '<p class="text-red-500">Product not found</p>';
     </script>
+
+
+<!-- Navbar -->
+
 
 </body>
 </html>
